@@ -135,7 +135,7 @@ nav {
     text-transform: uppercase;
 }
 
-.txt-container>h1, .gamer-headline {
+.txt-container>h1, .gamer-headline, .games-headline {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -212,4 +212,69 @@ nav {
     font-size: 1.4rem;
     font-weight: 700;
 
+}
+
+/* --------------------- */
+
+/* games card section */
+.games-card-section {
+    text-align: center;
+    margin-inline: 8rem;
+    margin-top: 5rem;
+
+}
+
+.games-card-section>h1, .games-headline {
+    font-size: 2.5rem;
+    text-transform: none;
+    margin-block: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-block: 2rem;
+}
+
+.cards {
+    width: 14rem;
+    height: auto;
+}
+
+.cards p {
+    font-size: .8rem;
+    font-weight: normal;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 5px);
+    height: calc(100% - 10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    border: 3px solid #FF42A5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay .fa-solid {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: scale(3);
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
 }
