@@ -335,22 +335,26 @@ nav {
 /* --------------------- */
 .category-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     padding-inline: 8rem;
     margin-block: 8rem;
     padding-top: 2rem;
 
 }
 
+.first-line, .second-line {
+    display: flex;
+    justify-content: space-between;
+}
+
 .category {
     display: flex;
     align-items: center;
     column-gap: .5rem;
-    transform: scale(.7);
+    transform: scale(.8);
     border: 1px solid #ffffff00;
-    padding: 8px;
+    padding-inline: 8px;
     border-radius: 3rem;
 }
 
@@ -372,3 +376,73 @@ nav {
 /* --------------------- */
 
 /* Footer */
+
+footer {
+    background-color: #0B0223;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20rem;
+}
+
+footer>.main-logo {
+    justify-content: center;
+}
+
+footer>.main-logo>.logo-text {
+    color: #ffffff;
+}
+
+.footer-links {
+    column-gap: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+
+.footer-links a, .footer-links2 a {
+    color: #FFF;
+    text-align: center;
+    font-size: .8rem;
+    text-decoration: none;
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-inline: 20%;
+    column-gap: 20px;
+    padding-block: 1rem;
+}
+
+.footer-icons svg {
+    height: 70%;
+}
+
+.footer-links2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+    width: 70%;
+}
+
+.footer-links2 a {
+    color: #ffffff99;
+    text-align: center;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.bottom-txt {
+    color: #ffffff99;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+/* ------desktop End------- */
