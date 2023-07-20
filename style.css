@@ -146,6 +146,7 @@ nav {
     margin-block: 0;
 }
 
+/*  ----- */
 .txt-container svg {
     transform: scale(80%);
 }
@@ -249,23 +250,37 @@ nav {
 
 .img-container {
     position: relative;
+    border-radius: .85rem;
+    border: .3rem solid #ff42a400;
 }
 
 .img-container img {
     width: 100%;
+    display: block;
+
 }
 
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 5px);
-    height: calc(100% - 10px);
+    width: calc(100%);
+    height: calc(100%);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: .5rem;
-    border: 3px solid #FF42A5;
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .overlay .fa-solid {
@@ -273,6 +288,12 @@ nav {
     top: 50%;
     text-align: center;
     transform: scale(3);
+}
+
+.img-container:hover {
+    border-radius: .85rem;
+    border: .3rem solid #FF42A5;
+
 }
 
 .img-container:hover .overlay {
@@ -446,3 +467,68 @@ footer>.main-logo>.logo-text {
 }
 
 /* ------desktop End------- */
+
+
+
+/* Mobile responsive start */
+
+@media screen and (max-width: 768px) {
+    /* common section */
+
+    .common-btn {
+        transform: scale(1);
+    }
+
+    /* nav section */
+    .header {}
+
+    nav {
+        padding-inline: 1rem;
+        box-shadow: none;
+        flex-direction: column;
+    }
+
+    .main-logo {
+        transform: scale(.9);
+    }
+
+    .main-logo img {
+
+        padding-right: .5rem;
+    }
+
+    .nav-txt {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .nav-button {
+        transform: scale(.8);
+        column-gap: .3rem;
+    }
+
+    /* --------------------- */
+
+    /* main section */
+
+    #main-section {
+        padding-inline: 15%;
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+        background-image: none;
+    }
+
+    #main-section>div {
+        width: 100%;
+    }
+
+    .txt-container>h3 {
+        font-size: 2rem;
+
+    }
+
+    .txt-container>h1, .gamer-headline, .games-headline {
+        font-size: 4rem;
+
+    }
+}
