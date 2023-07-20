@@ -527,7 +527,7 @@ footer>.main-logo>.logo-text {
 
     }
 
-    .txt-container>h1, .games-headline {
+    .txt-container>h1 {
         font-size: 4rem;
 
     }
@@ -565,4 +565,32 @@ footer>.main-logo>.logo-text {
         font-size: 1.1rem;
     }
 
+    /* -------------------- */
+
+    /* cards section */
+    .games-card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 0;
+
+    }
+
+    .games-card-txt>h1, .games-card-txt>h1>span {
+        font-size: 1.5rem;
+    }
+
+    .games-card-txt>p {
+        font-size: .7rem;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .games-card-section div {
+        width: 100%;
+
+    }
 }
